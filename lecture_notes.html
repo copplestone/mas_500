@@ -1,0 +1,48 @@
+
+
+<html>
+<head>
+  <title>CBA Grace</title>
+  <link rel="stylesheet" href="https://copplestone.pages.cba.mit.edu/styling/stylesheet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="assets/jquery.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <style>
+  table {
+    border-collapse: collapse;
+  }
+  table,td,th,tr {
+    border: 1px solid black;
+  }
+  </style>
+    
+</head>
+<body id="main">
+<h1>MAS.500 - How to build software - taught but Rahul</h1>
+<h3>Lecture 1</h3>
+<p></p>
+<ul>
+	<li>Assembly code is made up of ~ 200 instructions (ADD, LD, STR), more complex instructions can carry out parallel computations (based on the GPU)</li>
+	<li>Assembly code instructions can fetch values from the memory and put them in registers</li>
+  <li>Different languages compile in different ways - check how python and javascript differ... https://blog.glyphobet.net/essay/2557/</li>
+  <li><b>Imperative code</b> doesn't scale well</li>
+  <li><b>Procedural code</b> uses functions/procedures to separate things</li>
+  <li><b>Object oriented</b> - encapsulate complexity via abstraction to prevent spagetti code, enabled using classes, in Python, classes are defined by a module. The class describes the object</li>
+  <li>In a Python class setup using <code>def __init__(self, filemane): self.filename = filename</code> to get all the functions with self to keep track of the file name</li>
+  <li>The most important audience of your code is your future self in 6 months time</li>
+  <li><b>Event driven</b> code limits the scope to reduce complexity - almost always runs around and around a loop - <code>while True:</code></li>
+  <li><b>Functional programming</b> - takes an input that goes through a function and produces an output - makes it easier to scale reliably. <code>names = [line.split(",")[1] for line in all_lines] - Scala is a functional programming language so doesn't let you hold onto state</code></li>
+  <li>The packages required in a python project are stored in requirements.txt so use <code>pip install requirements.txt</code></li>
+  <li>Use a <b>virtual environment</b> to store the current libraries at that time and run the project inside of. To run separate OS's then you use <b>containers</b> and to control the hardware that the stuff actually runs on then you use <b>virtual machines</b>.</li>
+
+  <li>Questions - Is object-oriented enabled by class structures, how does the functional example not hold onto state (what is the state in imperative)</li>
+</ul>
+
+
+</body>
