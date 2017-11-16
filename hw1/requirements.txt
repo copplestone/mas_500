@@ -1,0 +1,13 @@
+###### Requirements without Version Specifiers ######
+json
+datetime
+ConfigParser
+
+#
+###### Requirements with Version Specifiers ######
+#   See https://www.python.org/dev/peps/pep-0440/#version-specifiers
+mediacloud >= 2.43.2
+
+###### Refer to other requirements files ######
+# -r other-requirements.txt
+#
