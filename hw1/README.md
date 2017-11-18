@@ -2,7 +2,6 @@
 
 The research question I'm going to look into is where Hilary Clinton was referred to by her first name more that Donald Trump.
 
-To use this project you should be able to run `pip install requirements.txt` to get all the relevant libraries, you'll need your own Mediacloud key, saved in a config/config.ini file using the following format:
+To use this project you should be able to run `pip install requirements.txt` to get all the relevant libraries (not quite working yet).
 
-[auth]
-mediacloudkey = your_key
+You'll also need to get a Mediacloud key and paste this into the hw1.py file.

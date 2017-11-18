@@ -25,7 +25,7 @@
 </head>
 <body id="main">
 <h1>MAS.500 - How to build software - taught but Rahul Bhargava</h1>
-<h3>Lecture 1</h3>
+<h3>Lecture 1 - Intro and basics</h3>
 <p></p>
 <ul>
 	<li>Assembly code is made up of ~ 200 instructions (ADD, LD, STR), more complex instructions can carry out parallel computations (based on the GPU)</li>
@@ -45,5 +45,16 @@
   <li>Questions - Is object-oriented enabled by class structures, how does the functional example not hold onto state (what is the state in imperative)</li>
 </ul>
 
+<h3>Lecture 2 - Building software strategically</h3>
+<ul>
+  <li>Unit test - critcal test for the most used components and all the edge cases that they may undergo</li>
+  <li><b>Data structures</b> - Stack (First In First Out), queue (Last in First Out)</li>
+  <li><b>Logging</b> - way to figure out when something breaks and what happened when it broke, you can use Sentry for displaying logs created with the logging module in Python</li> 
+  <li>Data for services logging, analytics, server storage all go through HTTP, encoded in json.</li>
+  <li><b>Licenses</b> - the MIT license is a general open source license that people use, it doesn't have to be a project in MIT. You apply a license by including a LICENSE file in the repository.</li>
+  <li>Majority of IDE's these days are specialised versions of Eclipse. IDE's are good for debugging tool and linting (enforcing norms for good code)</li>
+  <li>Some architectures like Rail and iOS bake in <b>MVC (Model, View, Controller)</b> as the file names. You can have thick models (that contain all the business logic) and thin controllers, or thin models and thick controllers.</li>
+  <li>When logging you can adjust the logger level. At the DEBUG logger level you get more details. Levels of logs include <code>info</code>, <code>debug</code>, <code>warn</code> and <code>error</code></li>
+</ul>
 
 </body>

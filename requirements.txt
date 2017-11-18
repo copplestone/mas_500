@@ -1,0 +1,5 @@
+mediacloud
+matplotlib==1.5.1
+numpy
+datetime
+unittest2

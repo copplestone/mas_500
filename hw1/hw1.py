@@ -1,7 +1,9 @@
-import mediacloud, json, datetime
+import mediacloud
+import datetime
 import ConfigParser
 import matplotlib.pyplot as plt
 import numpy as np
+
 config = ConfigParser.ConfigParser()
 config.read("../config/config.ini")
 key = config.get('auth','mediacloudkey')
