@@ -21,8 +21,8 @@ def fetch_input():
 	logger.info("Wrote input words to config.ini")
 	
 	# get timespan as input in the command line
-	start_date = input("Enter start date [yyyy,mm,dd] :")
-	end_date = input("Enter end date [yyyy,mm,dd] :")
+	start_date = input("Enter start date (enter 4 for April rather than 04) [yyyy,m,d] :")
+	end_date = input("Enter end date (enter 4 for April rather than 04) [yyyy,m,d] :")
 
 	config.set('timespan','year1',start_date[0])
 	config.set('timespan','month1',start_date[1])
