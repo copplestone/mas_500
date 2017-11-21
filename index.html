@@ -25,6 +25,9 @@
 </head>
 <body id="main">
 <h1>MAS.500 - How to build software - taught but Rahul Bhargava</h1>
+
+<p>Homework for this class is being stored in this <a href="https://github.com/copplestone/mas_500">Github repository.</a></p>
+
 <h3>Lecture 1 - Intro and basics</h3>
 <p></p>
 <ul>
@@ -55,6 +58,23 @@
   <li>Majority of IDE's these days are specialised versions of Eclipse. IDE's are good for debugging tool and linting (enforcing norms for good code)</li>
   <li>Some architectures like Rail and iOS bake in <b>MVC (Model, View, Controller)</b> as the file names. You can have thick models (that contain all the business logic) and thin controllers, or thin models and thick controllers.</li>
   <li>When logging you can adjust the logger level. At the DEBUG logger level you get more details. Levels of logs include <code>info</code>, <code>debug</code>, <code>warn</code> and <code>error</code></li>
+</ul>
+
+<h3>Lecture 3 - Building for the web</h3>
+<ul>
+  <li>Approaches - Content Management Systems - CMS (Wordpress, Drupal), micro-frameworks (Sinatra - Ruby, Flask - Python), macro-frameworks (Rails - Ruby, Django - Python, metero - JS) </li>
+  <li>Traditionally the software stack of a web app is - server (Flask/backend) > HTML > CSS > JS. Over time, more functionality is moving to the front end into JS. </li>
+  <li>React is a JavaScript library for building user interfaces. React lets you do HTML where you're doing you're JS (and sometimes the CSS too).</li>
+  <li>You can get React apps up and running quickly by using create-react-app with <code>npm install -g create-react-app</code>. You can then set up a single page application using <code>create-react-app my-app</code>, <code>cd my-app</code> and <code>npm start</code>.
+  <li>Redux is how a react app talks to the server</li>
+  <li>You use HTTP 'get' to fetch things from a server and the server gives back using 'put' or some other relevant verb.</li>
+  <li>Use tool in Chrome Inspect/Network/Slow 3G to experience your app with a simulated slow network. This doesn't represent latency as a result of outdated hardware. Also apps that use websockets (such as Google docs) don't get slowed down by this tool.</li>
+  <li>There's a big reaction to the extensively gimicky web designs that throw as much click bait as you as possible. This reaction is demonstrated at <a href="http://brutalistwebsites.com/">http://brutalistwebsites.com/</a> and <a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a>.</li>
+  <li>Progressive web apps cache files previously loaded from the server so when you revisit the site you only need to make an API call.</li>
+  <li>So Facebook has a list of templates (profile_template, newsfeed_template) which are stored on a server. And so the user gets a template which is seeded with data from the Facebook database. Increasingly, the templates are stored as raw files in the browser cache. And then the user only has to make a single call through an API to a database stored on a separate server.</li>
+  <li>All this adds up to metrics including time to load a website which is a function of a data call through an API to a database on a server.</li>
+  <li>When you want to spin up a quick server to host a web app then Heroku is best (build on top of AWS). Amazon Web Services (AWS) is a collection of cloud-computing services. The service that best matches Heroku is AWS Elastic Beanstalk.</li>
+  <li>Flask uses decorators such as <code>@app.route("/")</code> to specify code for tasks and templates to use for different URLs. Templates in Flask are written using Jinja2. Jinja2 is a full featured template engine for Python.</li>
 </ul>
 
 </body>
