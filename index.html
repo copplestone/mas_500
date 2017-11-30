@@ -67,15 +67,25 @@
   <li>React is a JavaScript library for building user interfaces. React lets you do HTML where you're doing you're JS (and sometimes the CSS too).</li>
   <li>You can get React apps up and running quickly by using create-react-app with <code>npm install -g create-react-app</code>. You can then set up a single page application using <code>create-react-app my-app</code>, <code>cd my-app</code> and <code>npm start</code>.
   <li>Redux is how a react app talks to the server</li>
-  <li>You use HTTP 'get' to fetch things from a server and the server gives back using 'put' or some other relevant verb.</li>
+  <li>You use HTTP 'get' to fetch things from a server and the server gives back using 'put' or some other relevant
+    verb.</li>
   <li>Use tool in Chrome Inspect/Network/Slow 3G to experience your app with a simulated slow network. This doesn't represent latency as a result of outdated hardware. Also apps that use websockets (such as Google docs) don't get slowed down by this tool.</li>
-  <li>There's a big reaction to the extensively gimicky web designs that throw as much click bait as you as possible. This reaction is demonstrated at <a href="http://brutalistwebsites.com/">http://brutalistwebsites.com/</a> and <a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a>.</li>
-  <li>Progressive web apps cache files previously loaded from the server so when you revisit the site you only need to make an API call.</li>
-  <li>So Facebook has a list of templates (profile_template, newsfeed_template) which are stored on a server. And so the user gets a template which is seeded with data from the Facebook database. Increasingly, the templates are stored as raw files in the browser cache. And then the user only has to make a single call through an API to a database stored on a separate server.</li>
+  <li>There's a big reaction to the extensively gimicky web designs that throw as much click bait as you as possible.
+    This reaction is demonstrated at <a href="http://brutalistwebsites.com/">http://brutalistwebsites.com/</a> and <a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a>.</li>
+  <li>Progressive web apps cache files previously loaded from the server so when you revisit the site you only need
+    to make an API call.</li>
+  <li>So Facebook has a list of templates (profile_template, newsfeed_template) which are stored on a server. And so
+    the user gets a template which is seeded with data from the Facebook database. Increasingly, the templates are stored as raw files in the browser cache. And then the user only has to make a single call through an API to a database stored on a separate server.</li>
   <li>All this adds up to metrics including time to load a website which is a function of a data call through an API to a database on a server.</li>
-  <li>When you want to spin up a quick server to host a web app then Heroku is best (build on top of AWS). Amazon Web Services (AWS) is a collection of cloud-computing services. The service that best matches Heroku is AWS Elastic Beanstalk.</li>
-  <li>Flask uses decorators such as <code>@app.route("/")</code> to specify code for tasks and templates to use for different URLs. Templates in Flask are written using Jinja2. Jinja2 is a full featured template engine for Python. React uses routes.js to specify where to go for each URL.</li>
-  <li>Redux is used to show how information flows through an app.</li>
+  <li>When you want to spin up a quick server to host a web app then Heroku is best (build on top of AWS). Amazon Web
+    Services (AWS) is a collection of cloud-computing services. The service that best matches Heroku is AWS Elastic Beanstalk.</li>
+  <li>Flask uses decorators such as <code>@app.route("/")</code> to specify code for tasks and templates to use for
+    different URLs. Templates in Flask are written using Jinja2. Jinja2 is a full featured template engine for Python. React uses routes.js to specify where to go for each URL.</li>
+  <li>Redux provides a state container for JavaScript applications that will help your applications behave
+    consistently.</li>
+  <li>Questions - Don't understand the file structure for React, using the date html field and converting this to
+    date time without having to pull out characters of the string, how are you meant to interpret the links in the API documentation</li>
+  
 </ul>
 <h3>Intro to WebGL and shader programs to use the GPU for computation</h3>
 <ul>
@@ -86,6 +96,24 @@
   <li>Information for each pixel is stored in the r, b, g and/or a value for that pixel.</li>
   <li>The most advanced form of Amanda's projects that utilize the GPU separate out the calculations for rendering from the mathematical functions.</li>
   <li>Nice web design kit is Bootstrap and FlatUI. Bootstrap modals are good for help boxes and JQuery is helpful too.</li>
+</ul>
+
+<h3>Lecture 4 - Building mobile applications</h3>
+<ul>
+  <li>Current state of mobile apps is that they minimise the number of tasks per app. Facebook divides messaging into a separate app.</li>
+  <li>Be aware of the types of phones, connectivity and environment that people will be using your app.</li>
+  <li>There are useful design guides for the size of features like buttons and gestures that are required to make apps useable</li>
+  <li>Apps are constantly stopped and started based on events like loosing connectivity or moving between different apps. Mobile apps have constrained resources</li>
+  <li><b>React native</b>b> is wrapped inside many major mobile apps. Create React Mative is a bunch of command line
+    options that help speed up the development cycle. Expo, Ignite and Ionic are other cross platform mobile
+    development tools for building React Native apps</li>
+  <li>There are several platforms to choose from including Android, iOS and Cordova. Cordova wraps your HTML/JavaScript
+    app into a native container which can access the
+    device functions of several platforms.</li>
+  <li>Writing a requirements list in terms of expected connectivity, platforms and hardware on the phone which is
+    required is really important and useful for choosing which technology you're going to use to make the app.</li>
+  <li>In order to over ride UI styles nad manage complexity in Ionic you need to master Angular which can be a headache
+    .</li>
 </ul>
 
 </body>
