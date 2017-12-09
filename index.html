@@ -116,4 +116,51 @@
     .</li>
 </ul>
 
+<h3>Lecture 5 - Managing data</h3>
+<ul>
+  <li><b>Relational databases</b> are most commonly used. An object has various attributes and the different objects and relations relate to one another as many to many, or many to one, or one to one relationships.</li>
+  <li>Link tables are used for many to many relationships?</li>
+  <li>The point of this type of data storage is to ensure that data isn't replicated, so it doesn't have to be updated in multiple places</li>
+  <li>Keys - ID might be the primary key. You can also used foreign keys.</li>
+  <li><b>SQL</b> (Structured Query Language) - Standard method to extract data from a relational database. SQL is often written using a data abstraction layer</li>
+  <li><b>NoSQL</b></li>
+  <li><b>Document databases</b> - When data isn't relational or you want a flexible way to quickly store data e.g. logging, document storage, low latency</li>
+  <li><b>MongoDB</b> exists to let you save a json element very quickly. MongoDB lets you use methods like map reduce which lets you split up your data to let you parallelize data management</li>
+  <li><b>Transactions</b> - When you're doing things in a relational database you need to do many things at once. Transactions contain a list of changes to be made. If any of the tasks aren't carried out then the commit isn't made and everything is rolled back.</li>
+  <li><b>B-trees</b> - Speed up searching for data. You make rows as you grow the tree, you need to keep balancing the tree. <b>Explain</b> lets you do query optimization</li>
+  <li>Version control in databases is managed using migrations</li>
+  <li>Stick to conventions - use the created_at and updated_at columns</li>
+  <li><b>SQLAlchemy</b> is the Python SQL toolkit and Object Relational Mapper. Using a code layer on top like this can ensure that your SQL is more secure (robust to hacks)</li>
+  <li><b>SQLite</b> is not a client–server database engine. Rather, it is embedded into the end program. Faster to get up and running with</li>
+  <li>Relational databases can be stored using a range of cloud services and accessed using a connection string. That's overkill for short term, quick projects.</li>
+</ul>
+
+<h3>Lecture 5 cont. - Machine learning</h3>
+<ul>
+  <li>Further notes and documentation at <a href="https://colcarroll.github.io/working_ml/">https://colcarroll.github.io/working_ml/</a> </li>
+  <li>All algorithms minimize a thing, you should know what this is and why you picked it.</li>
+  <li>Machine learning is useful for certain tasks, not ALL!</li>
+  <li><b>Regression and classification</b> - Supervised method for labelled data</li>
+  <li><b>Clustering</b> - Unsupervised learning, can be dangerous in that it's more opaque.</li>
+  <li>Analysis is normally incorporated into a data science role, relies heavily on statistics. Tools include Excel, Jupyter, Tableau</li>
+  <li>Products can involve some kind of machine learning, tools involve Python, R and Scala</li>
+  <li>There can be a trade of between <b>explainable vs accurate</b> algorithms. Interactive models can help bridge the gap between the two.</li>
+  <li>Algorithms can  stream results live as data comes in or batch which are easier to plan and manage (Spotify Discover weekly is most probably a batch algorithm)</li>
+  <li><b>sklearn</b> is a python library to apply a range of machine learning algorithms. Use tab complete where you initialise an algorithm to learn what the algorithm uses to get to work. sns.pairplot lets you create a table of plots</li>
+  <li><b>seaborn</b> is library built on top of matplotlib to make it a bit easier to use</li>
+  <li><b>Spacy</b> is an open source library for NLP (Natural Language Processing). You can use 'named entities' to extract important parts/words in text</li>
+  <li>Keras is a deep learning python library which wraps around TensorFlow</li>
+</ul>
+
+<h3>Lecture 6 - Prototype to product</h3>
+<ul>
+  <li>A well built app will separate the software, database and hardware are separate entities.</li>
+  <li>Software - Heroku, Joylent and Engine Yard can store the back end of your product in containers.</li>
+  <li>Data hosting - MongoHQ, MongoLab and Object Rocket can offer this microservice.</li>
+  <li>Local environment, development copy, staging copy and product are often used as different stages of product management pipeline. </li>
+  <li><b>CDN - Content Delivery Networks</b> are operated by companies like Akamai and Cloudflare. They host copies of your app that don't change around the world to minimise latency for all users. You could point the CDN to your Heroku container.</li>
+  <li>To host a web app in Heroku or , set up Heroku as a location that you can push to using git.</li>
+  <li>Containers don't hold state so don't hold photos in there, put photos in the database.</li>
+  <li>Chron jobs can be set up for tasks that are recurring if you're operating something like Dokku on your own server. On Heroku you can use Scheduler which is a free add-on for running jobs on your app at scheduled time intervals.</li>
+</ul>
 </body>
