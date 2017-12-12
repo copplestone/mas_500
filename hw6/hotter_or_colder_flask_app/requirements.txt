@@ -1,0 +1,11 @@
+flask
+requests[security]
+ConfigParser
+logging
+datetime
+os
+json
+requests
+numpy
+gunicorn
+

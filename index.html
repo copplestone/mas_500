@@ -162,5 +162,20 @@
   <li>To host a web app in Heroku or , set up Heroku as a location that you can push to using git.</li>
   <li>Containers don't hold state so don't hold photos in there, put photos in the database.</li>
   <li>Chron jobs can be set up for tasks that are recurring if you're operating something like Dokku on your own server. On Heroku you can use Scheduler which is a free add-on for running jobs on your app at scheduled time intervals.</li>
+  <li>Questions on Heroku deployment - difference between requirements.pip and requirements.txt?, what is the role of gunicorn and what if I don't have a flask/bin/pip folder to install it in, should I have a better file system for things like Procfiles?</li>
+  <li>Gunicorn - Flask speaks http but it isn't built to handle loads beyond you running a local server on your computer. Gunicorn sits between the web server (NGINX and Apache) and the request from computer. The app I'm building is configured to run certain code with gunicorn. Gunicorn sits between web server and code to help manage the code. Gunicorn is set up to scale in a way that Flask isn't.</li>
+  <li>Heroku - In order to trouble shoot when deploying to Heroku, use deployment logs to see what's happening when you're actually pushing it (check for errors). Otherwise look at the logs from your app on the Heroku UI, or go to Sentry if you've got that set up.</li>
+  <li>Cloud9 (recently purchased by AWS) lets you write, run and debug code in the browser which means you don't need to spend time setting up software and dependencies on your computer. You can also use this for Google docs style collaborative coding.</li>
+</ul>
+
+<h3>Lecture 7 - Visualization</h3>
+<ul>
+  <li>Approaches include configuration, transformation and render</li>
+  <li>In the configuration approach you set up some metadata (attributes of the graph/visualization), you pass that metadata to the library and the library renders it for you - E.g. Highcharts is a JS library with a big community and lots of examples</li>
+  <li>The transformation approach utilizes a certain amount of operations to transform the data before you present it - E.g. d3</li>
+  <li>The render approach, you think about what's going on the screen at ta very low level, perhaps at a pixel level using WebGL and shaders. And you respond to events that happen in the browser E.g. p5.js</li>
+  <li>Desktop based interactive visualization - Processing is the defacto standard, Flash used to be but has a diminishing following. Game design tools like Unity are gaining in usage, they have game engine and game physics built in.</li>
+  <li>Complicated visuals and simpler maths work best in framebased tools like Processing, simplier visuals and more complex maths work better in persistent tools like d3.</li>
+  <li>Using <b>p5.js</b> you can create interactive video that pulls in information realtime from API's and databases.</li>
 </ul>
 </body>

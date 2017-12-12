@@ -29,6 +29,8 @@ app = Flask(__name__)
 def home():
 
     # fetch data from the weather api
+    ##### I SHOULD REALLY BE STORING THIS IN A DATABASE EVERY HOUR TO MINIMIZE API CALLS #####
+
     base_url = "http://api.openweathermap.org/data/2.5/forecast?lat=42.37&lon=71.12&APPID=" + weather_key
     print(base_url)
     #parameters = {'lat':42.36,'lon':71.058}
@@ -40,7 +42,6 @@ def home():
     # extract temperature today and tomorrow
 
     weather_data = response.json()
-
     date_time1 = weather_data["list"][0]["dt_txt"]
     date_time2 = weather_data["list"][8]["dt_txt"]
     temp_today = weather_data["list"][0]["main"]["temp"]
@@ -50,6 +51,7 @@ def home():
 
 
     # use weather data to figure out the change in temperature
+
     difference = temp_today - temp_tomorrow
     if difference > 0:
         phrase = "colder than"
