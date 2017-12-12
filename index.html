@@ -166,9 +166,11 @@
   <li>Gunicorn - Flask speaks http but it isn't built to handle loads beyond you running a local server on your computer. Gunicorn sits between the web server (NGINX and Apache) and the request from computer. The app I'm building is configured to run certain code with gunicorn. Gunicorn sits between web server and code to help manage the code. Gunicorn is set up to scale in a way that Flask isn't.</li>
   <li>Heroku - In order to trouble shoot when deploying to Heroku, use deployment logs to see what's happening when you're actually pushing it (check for errors). Otherwise look at the logs from your app on the Heroku UI, or go to Sentry if you've got that set up.</li>
   <li>Cloud9 (recently purchased by AWS) lets you write, run and debug code in the browser which means you don't need to spend time setting up software and dependencies on your computer. You can also use this for Google docs style collaborative coding.</li>
+  <li>Programming for hardware is typically referred to as embedded programming. To do this you'd typically use a Real Time Operating System (RTOS) which run faster as they're lower level. You're normally resource constrained so need to be careful about memory usage. You'd typically use interrupts which are inputs which send signals straight to pins on the microcontroller. RTOS stuff have more rigorus testing suites.</li>
+  <li>Don't think about programming skills in terms of individual languages, it's more about learning a full workflow and the syntax, conventions, libraries, tools and services needed to deploy a web app or an iOS app.</li>
 </ul>
 
-<h3>Lecture 7 - Visualization</h3>
+<h3>Lecture 7 - Building visualizations</h3>
 <ul>
   <li>Approaches include configuration, transformation and render</li>
   <li>In the configuration approach you set up some metadata (attributes of the graph/visualization), you pass that metadata to the library and the library renders it for you - E.g. Highcharts is a JS library with a big community and lots of examples</li>
